@@ -1,3 +1,4 @@
+// This is not showing up on my local host 3000
 import LogDetails from "../Components/LogDetails";
 
 function Show() {

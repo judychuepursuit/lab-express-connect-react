@@ -96,6 +96,8 @@ button {
   /* box-shadow: 2px 2px 4px #629de9; */
 }
 
+/* Why isnt this showing up??? */
+/* 
 table {
   width: 50%;
   margin: auto;
@@ -112,7 +114,8 @@ tbody td:not(td:first-of-type):hover {
 
 tbody tr:nth-child(even) {
   background: #4e9be2;
-}
+} */
+
 /* Area under Capain's Log and Input*/
 .New { 
   color: #4846c0;
