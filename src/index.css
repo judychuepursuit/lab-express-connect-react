@@ -1,5 +1,160 @@
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black
+
+}
+
+button {
+  background: #4846c0;
+  border-color: rgb(240, 168, 110);
+  /* font-style: italic; */
+  font-weight: normal;
+  font-size: x-small;
+}
+
+input[type],
+textarea {
+  display: block;
+  width: 90%;
+  margin: auto;
+  color: #1303bb;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  width: 15%;
+}
+
+input[type="submit"] {
+  color: white;
+  width: 30%;
+  background-color: #629de9;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.New form {
+  margin: auto;
+  width: 95%;
+}
+
+.showNavigation {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+nav {
+  /* background: #13079b; */
+  display: flex;
+  background: linear-gradient(to bottom right, #0d028a, #629de9);
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  box-shadow: 2px 2px 4px #629de9;
+  font-size: large;
+  margin-bottom: 3%;
+
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+button {
+  background: #4846c0;
+  border-color: white;
+  font-weight: normal;
+  font-size: small;
+  color: whitesmoke;
+  margin-right: 1px;
+  margin-top: 25px;
+  margin-left: 15px;
+  padding: 1% 2%;
+  /* box-shadow: 2px 2px 4px #629de9; */
+}
+
+table {
+  width: 50%;
+  margin: auto;
+}
+
+td {
+  text-align: center;
+}
+
+tbody td:not(td:first-of-type):hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+tbody tr:nth-child(even) {
+  background: #4e9be2;
+}
+/* Area under Capain's Log and Input*/
+.New { 
+  color: #4846c0;
+  /* background: #add0f1; */
+  /* border: 1px solid gold;
+  margin: auto;
+  width: 95%; */
+}
+/* Area under Edit and Input*/
+.New form {
+  margin: auto;
+  width: 95%;
+  color: #4846c0;
+  /* background: #add0f1; */
+}
+/* Input new lines type area */
+input[type],
+textarea {
+  display: block;
+  width: 90%;
+  margin: auto;
+  color: #4846c0;
+  font-style: normal;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  width: 15%;
+}
+
+input[type="submit"] {
+  width: 30%;
+  background: #add0f1;
+  font-weight: bold;
+  color: #4846c0;
+  border-color: #add0f1;
+  padding: 1% 2%;
+}
+
+.showNavigation {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+
 }
