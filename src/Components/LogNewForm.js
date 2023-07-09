@@ -1,6 +1,6 @@
 import axios from "axios";
-import { useParams, Link, useNavigate } from "react-router-dom";    
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";    
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -10,17 +10,16 @@ function LogNewForm() {
     captainName: "",
     title: "",
     post: "",
-    mistakesWereMadeToday: false,
     daysSinceLastCrisis: 0,
+    mistakesWereMadeToday: false,
   });
 
   const addlog = (log) => {
     axios
     .post(`${API}/logs`, log)
-    .then(
-    () => {
-    navigate(`/logs`);
-    })
+    .then(() => navigate(`/logs`))
+//     .then(() => {navigate(`/logs`)
+// })
     .catch((c) => console.error("catch", c));
    };
 
@@ -64,7 +63,7 @@ function LogNewForm() {
           name="post"
           required
           value={log.post}
-          placeholder="Quote"
+          placeholder="What happened today?"
           onChange={handleTextChange}
         />
         <label htmlFor="daysSinceLastCrisis">Days Since Last Crisis:</label>

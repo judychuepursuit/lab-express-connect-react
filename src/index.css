@@ -1,8 +1,8 @@
-body {
-  margin: 0;
+/* body {
+  margin: 0; */
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -15,9 +15,9 @@ button {
   background: #4846c0;
   border-color: rgb(240, 168, 110);
   /* font-style: italic; */
-  font-weight: normal;
-  font-size: x-small;
-}
+  /* font-weight: normal;
+  font-size: x-small; */
+/* }
 
 input[type],
 textarea {
@@ -52,11 +52,11 @@ main {
   display: flex;
   justify-content: space-around;
   width: 50%;
-}
+} */
 
-nav {
+/* nav {  */
   /* background: #13079b; */
-  display: flex;
+  /* display: flex;
   background: linear-gradient(to bottom right, #0d028a, #629de9);
   justify-content: space-between;
   align-items: center;
@@ -92,9 +92,9 @@ button {
   margin-right: 1px;
   margin-top: 25px;
   margin-left: 15px;
-  padding: 1% 2%;
+  padding: 1% 2%; */
   /* box-shadow: 2px 2px 4px #629de9; */
-}
+/* } */
 
 /* Why isnt this showing up??? */
 /* 
@@ -117,22 +117,22 @@ tbody tr:nth-child(even) {
 } */
 
 /* Area under Capain's Log and Input*/
-.New { 
-  color: #4846c0;
+/* .New { 
+  color: #4846c0; */
   /* background: #add0f1; */
   /* border: 1px solid gold;
   margin: auto;
   width: 95%; */
-}
+/* } */
 /* Area under Edit and Input*/
-.New form {
+/* .New form {
   margin: auto;
   width: 95%;
-  color: #4846c0;
+  color: #4846c0; */
   /* background: #add0f1; */
-}
+/* } */
 /* Input new lines type area */
-input[type],
+/* input[type],
 textarea {
   display: block;
   width: 90%;
@@ -160,4 +160,135 @@ input[type="submit"] {
   justify-content: space-around;
   width: 50%;
 
+} */
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+nav {
+  background: linear-gradient(to bottom right, mediumblue, #92cffb);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px 20px 45px;
+  box-shadow: 2px 2px 8px #629de9;
+  margin-bottom: 15px;
+  font-size: larger;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  background-image:
+  linear-gradient(45deg, rgb(100, 100, 248), rgb(191, 235, 249));
+  background-clip: text;
+  color: transparent;
+  
+}
+
+a {
+  color: #0d028a;
+  text-decoration: none;
+}
+
+nav a {
+  color:white
+}
+
+button, input[type="submit"] {
+  border-color: aliceblue;
+  font-weight: bold;
+  font-size: x-small;
+  padding: 5px 8px 5px 12px;
+  color: white;
+  background: #6686f9
+}
+
+nav button {
+  background: #2451f3;
+}
+
+h4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+table {
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #629de9;
+  margin: auto;
+  padding: 1.5em;
+  width: 75%;
+  font-size: small;
+  /* background-color: #eefafc; */
+}
+
+td {
+  text-align: center;
+  /* background-color: #d3eafa; */
+  padding-top: 10px;
+}
+
+tbody td:not(td:first-of-type):hover {
+  transform: scale(1.25);
+  opacity: 0.6;
+}
+
+tbody tr:nth-child(odd) {
+  background: #f5e5f7;
+}
+
+.New form {
+  margin: auto;
+  width: 95%;
+  color: #2514db;
+  font-size: small;
+}
+
+input[type],
+textarea {
+  padding-top: 2px;
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  width: 11%;
+}
+
+input[type="submit"] {
+  width: 30%;
+  font-size: x-small;
+  margin-top: 2em;
+}
+
+.showNavigation {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  /* padding-block-start: 4px; */
+}
+
+.log-page {
+  margin: 1em 0 0 4.5em;
+}
+
+.log-detail {
+  background-color: #6686f9;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #629de9;
+  width: 37em;
+  height:fit-content;
+  margin: 0 0 1.5em 0;
+  padding: .5px 8px 8px 12px;
+  font-size: x-small;
+  color: white;
 }

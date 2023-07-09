@@ -5,7 +5,7 @@ function Log({ log, index }) {
     <tr className="Log">
       <td>
         {log.mistakesWereMadeToday ? (
-          <span>⭐️</span>
+          <span>💥</span>
         ) : (
           <span>&nbsp; &nbsp; &nbsp;</span>
         )}
@@ -16,7 +16,9 @@ function Log({ log, index }) {
         </a>
       </td>
       <td>
-        <Link to={`/logs/${index}`}>✏️</Link>
+{/* This was updated 7.8.23 */}
+        {/* <Link to={`/logs/${index}`}>✏️</Link> */}
+        <Link to={`/logs/${index}`}>{log.title}</Link>
       </td>
     </tr>
   );

@@ -12,8 +12,8 @@ function LogEditForm() {
     captainName: "",
     title: "",
     post: "",
-    mistakesWereMadeToday: false,
     daysSinceLastCrisis: 0,
+    mistakesWereMadeToday: false,
   });
 
   const updatelog = () => {
@@ -79,13 +79,6 @@ function LogEditForm() {
           placeholder="Quote"
           onChange={handleTextChange}
         />
-        <label htmlFor="mistakesWereMadeToday">Mistakes were made today:</label>
-        <input
-          id="mistakesWereMadeToday"
-          type="checkbox"
-          onChange={handleCheckboxChange}
-          checked={log.mistakesWereMadeToday}
-        />
         <label htmlFor="daysSinceLastCrisis">Days Since Last Crisis:</label>
         <input
           id="daysSinceLastCrisis"
@@ -94,6 +87,13 @@ function LogEditForm() {
           value={log.daysSinceLastCrisis}
           onChange={handleTextChange}
           placeholder="Days Since Last Crisis"
+        />
+        <label htmlFor="mistakesWereMadeToday">Mistakes were made today:</label>
+        <input
+          id="mistakesWereMadeToday"
+          type="checkbox"
+          onChange={handleCheckboxChange}
+          checked={log.mistakesWereMadeToday}
         />
         <br />
 

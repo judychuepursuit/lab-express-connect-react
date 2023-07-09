@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Log from "./Log";
 
 const API = process.env.REACT_APP_API_URL;
-console.log(API)
+// console.log(API)
 
 function Logs() {
   const [logs, setLogs] = useState([]);
@@ -28,9 +28,12 @@ function Logs() {
             </tr>
           </thead>
           <tbody>
-            {logs.map((log, index) => {
+            {/* {logs.map((log, index) => {
               return <Log key={index} log={log} index={index} />;
-            })}
+            })} */}
+            {logs.map((log, index) => 
+            <Log key={index} log={log} index={index} />
+            )}
           </tbody>
         </table>
       </section>
